@@ -466,6 +466,9 @@
           
 
   
+    <div id="gitalk-container"></div>
+    
+  
 
 
 
@@ -786,6 +789,22 @@
 
 
 
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '1ccc62e075e10697ccdd',
+          clientSecret: '8090f9d81998b5fff3ca90b50bd6e22d2fd53c7e',
+          repo: 'https://yideluo.com',
+          owner: 'yideXT',
+          admin: ['yide_0919@163.com'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+       </script>
 
 
   
