@@ -1,0 +1,15 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "HQ4U6D9K6D.com.weget.WeMall",
+                "paths": [ "/route/*"]
+            },
+            {
+                "appID": "HQ4U6D9K6D.com.weget.WeMall",
+                "paths": [ "*" ]
+            }
+        ]
+    }
+}
