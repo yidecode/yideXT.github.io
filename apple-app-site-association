@@ -3,11 +3,11 @@
         "apps": [],
         "details": [
             {
-                "appID": "HQ4U6D9K6D.com.weget.WeMall",
+                "appID": "4U8UZBZ6R5.com.weget.WeMall",
                 "paths": [ "/route/*"]
             },
             {
-                "appID": "HQ4U6D9K6D.com.weget.WeMall",
+                "appID": "4U8UZBZ6R5.com.weget.WeMall",
                 "paths": [ "*" ]
             }
         ]
