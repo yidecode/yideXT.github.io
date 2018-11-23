@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="源码安装Node.js1. 需要安装的依赖库2. 下载源码、解压、编译、安装12345cd /usr/local/srcmkdir nodejscd nodejs//去nodejs官网下载当前长期支持版本wget https://nodejs.org/dist/v10.13.0/node-v10.13.0.tar.gz">
+<meta name="description" content="源码安装Node.js1. 需要安装的依赖库 安装gcc: yum install -y gcc gcc-c++;  2. 下载源码、解压、编译、安装123456789101112131415cd /usr/local/srcmkdir nodejscd nodejs//去nodejs官网下载当前长期支持版本wget https://nodejs.org/dist/v10.13.0/node-v">
 <meta name="keywords" content="Centos,Node">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Centos7源码安装NodeJs">
 <meta property="og:url" content="https://yideluo.com/archives/3548916931.html">
 <meta property="og:site_name" content="Ethan&#39;s Blog">
-<meta property="og:description" content="源码安装Node.js1. 需要安装的依赖库2. 下载源码、解压、编译、安装12345cd /usr/local/srcmkdir nodejscd nodejs//去nodejs官网下载当前长期支持版本wget https://nodejs.org/dist/v10.13.0/node-v10.13.0.tar.gz">
+<meta property="og:description" content="源码安装Node.js1. 需要安装的依赖库 安装gcc: yum install -y gcc gcc-c++;  2. 下载源码、解压、编译、安装123456789101112131415cd /usr/local/srcmkdir nodejscd nodejs//去nodejs官网下载当前长期支持版本wget https://nodejs.org/dist/v10.13.0/node-v">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-23T09:17:04.111Z">
+<meta property="og:updated_time" content="2018-11-23T09:36:00.500Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Centos7源码安装NodeJs">
-<meta name="twitter:description" content="源码安装Node.js1. 需要安装的依赖库2. 下载源码、解压、编译、安装12345cd /usr/local/srcmkdir nodejscd nodejs//去nodejs官网下载当前长期支持版本wget https://nodejs.org/dist/v10.13.0/node-v10.13.0.tar.gz">
+<meta name="twitter:description" content="源码安装Node.js1. 需要安装的依赖库 安装gcc: yum install -y gcc gcc-c++;  2. 下载源码、解压、编译、安装123456789101112131415cd /usr/local/srcmkdir nodejscd nodejs//去nodejs官网下载当前长期支持版本wget https://nodejs.org/dist/v10.13.0/node-v">
 
 
 
@@ -357,7 +357,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  58 字
+                  172 字
                 </span>
               
 
@@ -394,7 +394,14 @@
       
 
       
-        <h3 id="源码安装Node-js"><a href="#源码安装Node-js" class="headerlink" title="源码安装Node.js"></a>源码安装Node.js</h3><h4 id="1-需要安装的依赖库"><a href="#1-需要安装的依赖库" class="headerlink" title="1. 需要安装的依赖库"></a>1. 需要安装的依赖库</h4><h4 id="2-下载源码、解压、编译、安装"><a href="#2-下载源码、解压、编译、安装" class="headerlink" title="2. 下载源码、解压、编译、安装"></a>2. 下载源码、解压、编译、安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/src</span><br><span class="line">mkdir nodejs</span><br><span class="line">cd nodejs</span><br><span class="line">//去nodejs官网下载当前长期支持版本</span><br><span class="line">wget https://nodejs.org/dist/v10.13.0/node-v10.13.0.tar.gz</span><br></pre></td></tr></table></figure>
+        <h3 id="源码安装Node-js"><a href="#源码安装Node-js" class="headerlink" title="源码安装Node.js"></a>源码安装Node.js</h3><h4 id="1-需要安装的依赖库"><a href="#1-需要安装的依赖库" class="headerlink" title="1. 需要安装的依赖库"></a>1. 需要安装的依赖库</h4><ol>
+<li>安装gcc: <code>yum install -y gcc gcc-c++</code>;</li>
+</ol>
+<h4 id="2-下载源码、解压、编译、安装"><a href="#2-下载源码、解压、编译、安装" class="headerlink" title="2. 下载源码、解压、编译、安装"></a>2. 下载源码、解压、编译、安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/src</span><br><span class="line">mkdir nodejs</span><br><span class="line">cd nodejs</span><br><span class="line">//去nodejs官网下载当前长期支持版本</span><br><span class="line">wget https://nodejs.org/dist/v10.13.0/node-v10.13.0.tar.gz</span><br><span class="line">//解压</span><br><span class="line">tar -zxvf node-v10.13.0.tar.gz </span><br><span class="line">cd node-v10.13.0</span><br><span class="line"></span><br><span class="line">// 配置，指定安装路径，我安装在/opt目录下</span><br><span class="line">./configure --prefix=/opt/node</span><br><span class="line">// 编译，编译的时间可能比较长，稍等一会</span><br><span class="line">make</span><br><span class="line"># 没啥问题的话，就可以安装了</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+<h4 id="3-node使用"><a href="#3-node使用" class="headerlink" title="3. node使用"></a>3. node使用</h4><h4 id="1-把node添加到环境变量"><a href="#1-把node添加到环境变量" class="headerlink" title="1. 把node添加到环境变量"></a>1. 把node添加到环境变量</h4><blockquote>
+<p>根据个人喜好，我这里才去软链接的形式<br><code>ln -s /opt/nginx/sbin/nginx /usr/bin/nginx</code></p>
+</blockquote>
+
       
     </div>
     
@@ -595,7 +602,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#源码安装Node-js"><span class="nav-number">1.</span> <span class="nav-text">源码安装Node.js</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-需要安装的依赖库"><span class="nav-number">1.1.</span> <span class="nav-text">1. 需要安装的依赖库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-下载源码、解压、编译、安装"><span class="nav-number">1.2.</span> <span class="nav-text">2. 下载源码、解压、编译、安装</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#源码安装Node-js"><span class="nav-number">1.</span> <span class="nav-text">源码安装Node.js</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-需要安装的依赖库"><span class="nav-number">1.1.</span> <span class="nav-text">1. 需要安装的依赖库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-下载源码、解压、编译、安装"><span class="nav-number">1.2.</span> <span class="nav-text">2. 下载源码、解压、编译、安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-node使用"><span class="nav-number">1.3.</span> <span class="nav-text">3. node使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-把node添加到环境变量"><span class="nav-number">1.4.</span> <span class="nav-text">1. 把node添加到环境变量</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -630,7 +637,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">917</span>
+    <span title="Site words total count">1k</span>
   
 </div>
 
