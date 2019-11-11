@@ -93,18 +93,18 @@
   };
 </script>
 
-  <meta name="description" content="导读为了安装过程可控一点，或者是想使用最新版本，我们下载node源码，进行编译安装">
-<meta name="keywords" content="Centos,Node">
+  <meta name="description" content="源码安装Nginx1. 需要安装的依赖库 安装gcc: yum install -y gcc gcc-c++ 安装pcre pcre-devel: yum install -y pcre pcre-devel 安装zlib: yum install -y zlib zlib-devel 安装OpenSSL: yum install -y openssl openssl-devel  2. 下载源码">
+<meta name="keywords" content="CentOS,Nginx">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Centos7源码安装NodeJs">
-<meta property="og:url" content="https://blog.luoyide.cn/archives/3548916931.html">
+<meta property="og:title" content="Centos7源码安装Nginx">
+<meta property="og:url" content="https://blog.luoyide.cn/2018/10/05/3086842821.html">
 <meta property="og:site_name" content="Ethan&#39;s Blog">
-<meta property="og:description" content="导读为了安装过程可控一点，或者是想使用最新版本，我们下载node源码，进行编译安装">
+<meta property="og:description" content="源码安装Nginx1. 需要安装的依赖库 安装gcc: yum install -y gcc gcc-c++ 安装pcre pcre-devel: yum install -y pcre pcre-devel 安装zlib: yum install -y zlib zlib-devel 安装OpenSSL: yum install -y openssl openssl-devel  2. 下载源码">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-16T16:38:43.123Z">
+<meta property="og:updated_time" content="2019-11-11T11:35:06.446Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Centos7源码安装NodeJs">
-<meta name="twitter:description" content="导读为了安装过程可控一点，或者是想使用最新版本，我们下载node源码，进行编译安装">
+<meta name="twitter:title" content="Centos7源码安装Nginx">
+<meta name="twitter:description" content="源码安装Nginx1. 需要安装的依赖库 安装gcc: yum install -y gcc gcc-c++ 安装pcre pcre-devel: yum install -y pcre pcre-devel 安装zlib: yum install -y zlib zlib-devel 安装OpenSSL: yum install -y openssl openssl-devel  2. 下载源码">
 
 
 
@@ -112,7 +112,7 @@
 
   
   
-  <link rel="canonical" href="https://blog.luoyide.cn/archives/3548916931">
+  <link rel="canonical" href="https://blog.luoyide.cn/2018/10/05/3086842821">
 
 
 
@@ -123,7 +123,7 @@
 </script>
 
   
-  <title>Centos7源码安装NodeJs | Ethan's Blog</title>
+  <title>Centos7源码安装Nginx | Ethan's Blog</title>
   
 
 
@@ -261,7 +261,7 @@
         
         
           
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
 
     
     
@@ -334,7 +334,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.luoyide.cn/archives/3548916931.html">
+    <link itemprop="mainEntityOfPage" href="https://blog.luoyide.cn/2018/10/05/3086842821.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ethan">
@@ -351,7 +351,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Centos7源码安装NodeJs
+          <h1 class="post-title" itemprop="name headline">Centos7源码安装Nginx
 
               
             
@@ -377,7 +377,7 @@
                 
               
 
-              <time title="创建时间：2018-11-23 17:02:27" itemprop="dateCreated datePublished" datetime="2018-11-23T17:02:27+08:00">2018-11-23</time>
+              <time title="创建时间：2018-10-05 16:33:16" itemprop="dateCreated datePublished" datetime="2018-10-05T16:33:16+08:00">2018-10-05</time>
             </span>
           
 
@@ -392,7 +392,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-07-17 00:38:43" itemprop="dateModified" datetime="2019-07-17T00:38:43+08:00">2019-07-17</time>
+                <time title="修改时间：2019-11-11 19:35:06" itemprop="dateModified" datetime="2019-11-11T19:35:06+08:00">2019-11-11</time>
               </span>
             
           
@@ -406,7 +406,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/服务端/" itemprop="url" rel="index"><span itemprop="name">服务端</span></a></span>
 
                 
                 
@@ -443,7 +443,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span title="本文字数">482</span>
+              <span title="本文字数">884</span>
             </span>
           
 
@@ -474,14 +474,36 @@
       
 
       
-        <h3 id="导读"><a href="#导读" class="headerlink" title="导读"></a>导读</h3><p>为了安装过程可控一点，或者是想使用最新版本，我们下载node源码，进行编译安装 <a id="more"></a></p>
-<h3 id="源码安装Node-js"><a href="#源码安装Node-js" class="headerlink" title="源码安装Node.js"></a>源码安装Node.js</h3><h4 id="1-需要安装的依赖库"><a href="#1-需要安装的依赖库" class="headerlink" title="1. 需要安装的依赖库"></a>1. 需要安装的依赖库</h4><ol>
-<li>安装gcc: <code>yum install -y gcc gcc-c++</code>;</li>
+        <h3 id="源码安装Nginx"><a href="#源码安装Nginx" class="headerlink" title="源码安装Nginx"></a>源码安装Nginx</h3><h4 id="1-需要安装的依赖库"><a href="#1-需要安装的依赖库" class="headerlink" title="1. 需要安装的依赖库"></a>1. 需要安装的依赖库</h4><ol>
+<li>安装gcc: <code>yum install -y gcc gcc-c++</code></li>
+<li>安装pcre pcre-devel: <code>yum install -y pcre pcre-devel</code></li>
+<li>安装zlib: <code>yum install -y zlib zlib-devel</code></li>
+<li>安装OpenSSL: <code>yum install -y openssl openssl-devel</code></li>
 </ol>
-<h4 id="2-下载源码、解压、编译、安装"><a href="#2-下载源码、解压、编译、安装" class="headerlink" title="2. 下载源码、解压、编译、安装"></a>2. 下载源码、解压、编译、安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/src</span><br><span class="line">mkdir nodejs</span><br><span class="line">cd nodejs</span><br><span class="line">//去nodejs官网下载当前长期支持版本</span><br><span class="line">wget https://nodejs.org/dist/v10.13.0/node-v10.13.0.tar.gz</span><br><span class="line">//解压</span><br><span class="line">tar -zxvf node-v10.13.0.tar.gz </span><br><span class="line">cd node-v10.13.0</span><br><span class="line"></span><br><span class="line">// 配置，指定安装路径，我安装在/opt目录下</span><br><span class="line">./configure --prefix=/opt/node</span><br><span class="line">// 编译，编译的时间可能比较长，稍等一会</span><br><span class="line">make</span><br><span class="line"># 没啥问题的话，就可以安装了</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
-<h4 id="3-node使用"><a href="#3-node使用" class="headerlink" title="3. node使用"></a>3. node使用</h4><h4 id="1-把node添加到环境变量"><a href="#1-把node添加到环境变量" class="headerlink" title="1. 把node添加到环境变量"></a>1. 把node添加到环境变量</h4><blockquote>
-<p>根据个人喜好，我这里才去软链接的形式<br><code>ln -s /opt/nginx/sbin/nginx /usr/bin/nginx</code></p>
+<h4 id="2-下载源码，解压、编译、安装"><a href="#2-下载源码，解压、编译、安装" class="headerlink" title="2. 下载源码，解压、编译、安装"></a>2. 下载源码，解压、编译、安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/src</span><br><span class="line">mkdir nginx</span><br><span class="line">cd nginx</span><br><span class="line"># 下载当前Nginx稳定版本</span><br><span class="line">wget http://nginx.org/download/nginx-1.14.0.tar.gz</span><br><span class="line"># 解压</span><br><span class="line">tar -zxvf nginx-1.14.0.tar.gz</span><br><span class="line">cd nginx-1.14.0</span><br><span class="line"># 配置，我这儿指定安装路径，安装ssl模块，其他配置详解可以去官网查看</span><br><span class="line">./configure --prefix=/opt/nginx --with-http_ssl_module</span><br><span class="line"># 编译</span><br><span class="line">make</span><br><span class="line"># 不出问题，就可以安装了</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+<h4 id="3-nginx使用"><a href="#3-nginx使用" class="headerlink" title="3. nginx使用"></a>3. nginx使用</h4><blockquote>
+<p>配置文件配置略过，有需要可以网上查找详细配置；</p>
 </blockquote>
+<h5 id="添加到系统命令查找路径"><a href="#添加到系统命令查找路径" class="headerlink" title="添加到系统命令查找路径"></a>添加到系统命令查找路径</h5><blockquote>
+<p>我这采用软链接的形式</p>
+</blockquote>
+<ol>
+<li>先把<code>/usr/local/bin</code>添加PATH环境变量: <code>export PATH=$PATH:/usr/local/bin</code>;&lt;这种添加PATH方式只是暂时生效&gt;</li>
+<li>采用软链接的形式：<code>ln -s /opt/nginx/sbin/nginx /usr/local/bin/nginx</code></li>
+</ol>
+<h5 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h5><ul>
+<li>测试nginx配置文件: <code>nginx -t</code></li>
+<li>测试并打印配置文件: <code>nginx -T</code></li>
+<li>启动: <code>nginx</code></li>
+<li>重新加载配置文件: <code>nginx -s reload</code></li>
+<li>从容关闭nginx: <code>nginx -s quit</code></li>
+<li>停止nginx: <code>nginx -s stop</code></li>
+<li>查找nginx进程: <code>ps aux | grep nginx</code></li>
+</ul>
+<p>后续用到其他命令再添加。</p>
+<h5 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h5><ul>
+<li><a href="https://aotu.io/notes/2016/08/16/nginx-https/index.html" target="_blank" rel="noopener">nginx配置https服务器</a></li>
+</ul>
 
       
     </div>
@@ -512,9 +534,9 @@
         
         <div class="post-tags">
           
-            <a href="/tags/Centos/" rel="tag"># Centos</a>
+            <a href="/tags/CentOS/" rel="tag"># CentOS</a>
           
-            <a href="/tags/Node/" rel="tag"># Node</a>
+            <a href="/tags/Nginx/" rel="tag"># Nginx</a>
           
         </div>
       
@@ -527,8 +549,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/archives/3086842821.html" rel="next" title="Centos7源码安装Nginx">
-                <i class="fa fa-chevron-left"></i> Centos7源码安装Nginx
+              <a href="/2016/01/02/2384321070.html" rel="next" title="iOS HTTPS同步请求数据">
+                <i class="fa fa-chevron-left"></i> iOS HTTPS同步请求数据
               </a>
             
           </div>
@@ -536,6 +558,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/23/3548916931.html" rel="prev" title="Centos7源码安装NodeJs">
+                Centos7源码安装NodeJs <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -611,7 +637,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -634,7 +660,11 @@
         
           
         
-        <span class="site-state-item-count">3</span>
+          
+        
+          
+        
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -661,7 +691,11 @@
         
           
         
-        <span class="site-state-item-count">5</span>
+          
+        
+          
+        
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -722,7 +756,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#导读"><span class="nav-number">1.</span> <span class="nav-text">导读</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#源码安装Node-js"><span class="nav-number">2.</span> <span class="nav-text">源码安装Node.js</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-需要安装的依赖库"><span class="nav-number">2.1.</span> <span class="nav-text">1. 需要安装的依赖库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-下载源码、解压、编译、安装"><span class="nav-number">2.2.</span> <span class="nav-text">2. 下载源码、解压、编译、安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-node使用"><span class="nav-number">2.3.</span> <span class="nav-text">3. node使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-把node添加到环境变量"><span class="nav-number">2.4.</span> <span class="nav-text">1. 把node添加到环境变量</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#源码安装Nginx"><span class="nav-number">1.</span> <span class="nav-text">源码安装Nginx</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-需要安装的依赖库"><span class="nav-number">1.1.</span> <span class="nav-text">1. 需要安装的依赖库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-下载源码，解压、编译、安装"><span class="nav-number">1.2.</span> <span class="nav-text">2. 下载源码，解压、编译、安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-nginx使用"><span class="nav-number">1.3.</span> <span class="nav-text">3. nginx使用</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#添加到系统命令查找路径"><span class="nav-number">1.3.1.</span> <span class="nav-text">添加到系统命令查找路径</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#常用命令"><span class="nav-number">1.3.2.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#参考"><span class="nav-number">1.3.3.</span> <span class="nav-text">参考</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -755,7 +789,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">4k</span>
+    <span title="站点总字数">8k</span>
   
 
   
@@ -764,7 +798,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">4 分钟</span>
+    <span title="站点阅读时长">7 分钟</span>
   
 </div>
 
